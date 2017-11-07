@@ -1,5 +1,7 @@
 package com.your.dream.real;
 
+import static com.sun.activation.registries.LogSupport.log;
+
 /**
  * Hello world!
  *
@@ -13,7 +15,7 @@ public class App
 	
     public static void main( String[] args ) {
     	for(String arg : args) {
-    		System.out.println("parameter: " + arg);
+    		log("parameter: " + arg);
     	}
     }
 }

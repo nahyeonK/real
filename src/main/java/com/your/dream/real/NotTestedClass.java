@@ -1,7 +1,7 @@
 package com.your.dream.real;
 
 public class NotTestedClass {
-	public NotTestedClass() {
+	private NotTestedClass() {
 	}
 	
 	@Override
