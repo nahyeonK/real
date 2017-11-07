@@ -9,14 +9,13 @@ import java.util.logging.Logger;
  */
 public class App 
 {
-	private final static Logger logger = Logger.getLogger(App.class.getName());
-
-	private App() 
+	private App()
 	{
 		// do not create App class directly
 	}
 
 	public static void main(String[] args) {
+		final Logger logger = Logger.getLogger(App.class.getName());
     	for(String arg : args) {
     		logger.log(Level.FINE, "parameter: {}", arg);
     	}
