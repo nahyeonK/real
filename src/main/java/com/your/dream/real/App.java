@@ -1,6 +1,6 @@
 package com.your.dream.real;
 
-import static com.sun.activation.registries.LogSupport.log;
+import java.util.logging.Logger;
 
 /**
  * Hello world!
@@ -8,6 +8,8 @@ import static com.sun.activation.registries.LogSupport.log;
  */
 public class App 
 {
+	private final static Logger logger = Logger.getLogger(App.class.getName());
+
 	private App() 
 	{
 		// do not create App class directly
@@ -15,7 +17,7 @@ public class App
 	
     public static void main( String[] args ) {
     	for(String arg : args) {
-    		log("parameter: " + arg);
+    		logger.info("parameter: " + arg);
     	}
     }
 }
