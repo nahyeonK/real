@@ -18,7 +18,7 @@ public class App
 	
     public static void main( String[] args ) {
     	for(String arg : args) {
-    		logger.log(Level.ALL, "parameter: " + arg);
+    		logger.log(Level.FINE, "parameter: {}", arg);
     	}
     }
 }
