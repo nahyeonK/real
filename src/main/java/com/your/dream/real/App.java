@@ -1,5 +1,6 @@
 package com.your.dream.real;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -17,7 +18,7 @@ public class App
 	
     public static void main( String[] args ) {
     	for(String arg : args) {
-    		logger.info("parameter: " + arg);
+    		logger.log(Level.ALL, "parameter: " + arg);
     	}
     }
 }
